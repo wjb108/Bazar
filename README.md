@@ -8,7 +8,13 @@
 
 A user can sign up for an account and list multiple items for sale.
 
-The principal screens will be a gallery view of items for sale of all users, a registration page, a user profile page where the user can create, update, and delete items for sale.
+The principal screens:
+
+- gallery view of items for sale of all users
+
+- registration page
+
+- user profile page where the user can create, update, and delete items for sale.
 
 ### Goal
 
