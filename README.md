@@ -6,23 +6,25 @@
 
 ## MVP
 
-One-to-many relationship where a user can sign up for an account and list multiple items for sale. The principal screens will be a gallery view of items for sale of all users, a registration page, a user profile page where his/her items for sale can be created, updated, and deleted.
+A user can sign up for an account and list multiple items for sale.
 
-### Goals
+The principal screens will be a gallery view of items for sale of all users, a registration page, a user profile page where the user can create, update, and delete items for sale.
 
-- Build full-stack, full-CRUD app with user authentication utilizing a RESTful JSON API with the so-called "React on Rails" stack.
+### Goal
+
+Build full-stack, full-CRUD app with user authentication utilizing a RESTful JSON API with the so-called "React on Rails" stack.
 
 ### Libraries and Dependencies
 
-Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+Will fill in later!
 
-|     Library      | Description                              |
-| :--------------: | :--------------------------------------- |
-|      React       | Lorem ipsum dolor sit amet, consectetur. |
-|   React Router   | Lorem ipsum dolor sit amet, consectetur. |
-| React SemanticUI | Lorem ipsum dolor sit amet, consectetur. |
-|     Express      | Lorem ipsum dolor sit amet, consectetur. |
-|  Express Router  | Lorem ipsum dolor sit amet, consectetur. |
+|    Library    | Description                              |
+| :-----------: | :--------------------------------------- |
+|     React     | Lorem ipsum dolor sit amet, consectetur. |
+| React Router  | Lorem ipsum dolor sit amet, consectetur. |
+| Ruby on Rails | Lorem ipsum dolor sit amet, consectetur. |
+|       ?       | Lorem ipsum dolor sit amet, consectetur. |
+|       ?       | Lorem ipsum dolor sit amet, consectetur. |
 
 <br>
 
@@ -37,48 +39,27 @@ Registration
 User Profile
 <img src="./Builds - User Profile.png"/>
 
-#### Component Tree
-
-Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
-
 #### Component Architecture
 
-Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
-
-```structure
-
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
-
-```
-
-<br>
+<img src="./Builds - Outline Front-End.png"/>
 
 ### Server (Back End)
 
 #### ERD Model
 
-Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
-<br>
-
----
+## <img src="./Builds - Outline Back-End.png"/>
 
 ## Post-MVP
 
-Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Sorting of items
 
----
+- Save favorites
+
+- Recently viewed
+
+- Send messages
+
+<!-- ---
 
 ## Code Showcase
 
@@ -86,4 +67,4 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ## Code Issues & Resolutions
 
-Use this section to list of all major issues encountered and their resolution.
+Use this section to list of all major issues encountered and their resolution. -->
