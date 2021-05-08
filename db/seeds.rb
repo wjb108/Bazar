@@ -98,3 +98,30 @@ item_list = [
   price: 1,
   },
 ]
+
+category_list = [
+  {
+  name: "antiques",
+  },
+  {
+  name: "appliances",
+  },
+  {
+  name: "free",
+  },
+  {
+  name: "general",
+  },
+  {
+  name: "jewelry",
+  },
+  {
+  name: "household",
+  },
+  {
+  name: "sporting",
+  },
+  {
+  name: "tools",
+  },
+]
