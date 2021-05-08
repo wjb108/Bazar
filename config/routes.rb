@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :categories
     end
   # end
+  get "/allusers", to: "users#all_users"
   
   devise_for :users, controllers: { registrations: 'registrations' }
 
