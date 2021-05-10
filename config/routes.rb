@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "/allusers", to: "users#all_users"
   get "/users/:id", to: "users#show"
   put "/users/:id", to: "users#update"
+  delete "/users/:id", to: "users#destroy"
+  
   devise_for :users, controllers: { registrations: 'registrations' }
 
   namespace :api do

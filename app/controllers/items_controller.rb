@@ -1,7 +1,8 @@
 class ItemsController < ApiController
   skip_before_action :authenticate_user!, only: %i[index]
   # before_action only: %i[show update destroy]
-    def index
+  
+  def index
     @items = Item.all
     render json: @items
   end
@@ -12,7 +13,7 @@ class ItemsController < ApiController
   end
 
   def create
-    @item = Item.new(item_params)
+    @item = current_user.items.build(item_params)
     if @item.save
       render json: @item
     else
@@ -23,7 +24,7 @@ class ItemsController < ApiController
   def update
     @item = Item.find(params[:id])
 
-    if @item.update(item_params)
+    if @item.user == current_user && @item.update(item_params)
       render json: @item
     else
       render json: @item.errors
