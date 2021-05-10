@@ -7,7 +7,7 @@ export default function Items(props) {
   return (
     <div>
       {allItems.map((item) => (
-        <React.Fragment key={item.id}>
+        <div key={item.id}>
           <Link to={`/items/${item.id}`}>
             <Card
               title={item.title}
@@ -17,7 +17,7 @@ export default function Items(props) {
               img_url={item.img_url}
             />
           </Link>
-        </React.Fragment>
+        </div>
       ))}
     </div>
   );

@@ -19,16 +19,13 @@ export default function ItemsContainer() {
 
   const fetchItems = async () => {
     const items = await getItems();
+    console.log(items);
     setAllItems(items);
   };
 
   return (
     <div>
-      <Switch>
-        <Route path="/items">
-          <Items allItems={allItems} />
-        </Route>
-      </Switch>
+      <Items allItems={allItems} />
     </div>
   );
 }

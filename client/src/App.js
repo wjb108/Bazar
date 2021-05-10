@@ -5,9 +5,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/items" component={ItemsContainer}>
-          Bazar
-        </Route>
+        <Route path="/items" component={ItemsContainer}></Route>
       </Switch>
     </div>
   );
