@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
-    resources :categories do
-      resources :items
-    end
+    resources :categories
+    resources :items
+
 
   get "/allusers", to: "users#all_users"
-  root to:"home#index"
+  get "/users/:id", to: "users#show"
+  put "/users/:id", to: "users#update"
   devise_for :users, controllers: { registrations: 'registrations' }
 
   namespace :api do
     namespace :v1 do
-      get 'post/index'
       post :auth, to: 'authentication#create'
       get  '/auth' => 'authentication#fetch'
     end
