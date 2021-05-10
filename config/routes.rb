@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  # resources :users do
-    resources :items do
-      resources :categories
+    resources :categories do
+      resources :items
     end
-  # end
+
   get "/allusers", to: "users#all_users"
-  
+  root to:"home#index"
   devise_for :users, controllers: { registrations: 'registrations' }
 
   namespace :api do
