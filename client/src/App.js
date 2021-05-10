@@ -1,9 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { Switch } from "react-router";
+import { Route, Switch } from "react-router";
+import ItemsContainer from "./container/ItemsContainer/ItemsContainer";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Switch>
+        <Route path="/items" component={ItemsContainer}>
+          Bazar
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
 export default App;

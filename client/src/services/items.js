@@ -27,7 +27,7 @@ export const createItem = async (itemData) => {
   }
 };
 
-export const updatedUser = async (id, itemData) => {
+export const updatedItem = async (id, itemData) => {
   try {
     let res = await api.put(`/items/${id}`, itemData);
     return res.data;
@@ -36,7 +36,7 @@ export const updatedUser = async (id, itemData) => {
   }
 };
 
-export const deleteUser = async (id) => {
+export const deleteItem = async (id) => {
   try {
     let res = await api.delete(`/items/${id}`);
     return res.data;
