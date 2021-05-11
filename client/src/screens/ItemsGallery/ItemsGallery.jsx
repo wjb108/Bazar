@@ -10,8 +10,8 @@ export default function ItemsContainer(props) {
       {allItems.map((item) => (
         <div className="bazar-container" key={item.id}>
           <img src={item.img_url} alt={item.title} />
-          <h4>{item.title}</h4>
-          <p>{item.short_description}</p>
+          <h4>{`Title: ${item.title}`}</h4>
+          <p>{`Info: ${item.short_description}`}</p>
           <Link to={`/items/${item.id}`}>
             <button>More Info</button>
           </Link>

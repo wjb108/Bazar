@@ -20,8 +20,9 @@ export default function ItemDetail() {
   return (
     <div>
       <img src={item.img_url} alt={item.title} />
-      <h4>{item.title}</h4>
-      <p>{item.short_description}</p>
+      <h4>{`Title: ${item.title}`}</h4>
+      <p>{`Description: ${item.long_description}`}</p>
+      <p>{`Price: ${item.price}`}</p>
     </div>
   );
 }
