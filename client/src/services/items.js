@@ -18,7 +18,7 @@ export const getItem = async (id) => {
   }
 };
 
-export const createItem = async (itemData) => {
+export const postItem = async (itemData) => {
   try {
     let res = await api.post("/items", itemData);
     return res.data;

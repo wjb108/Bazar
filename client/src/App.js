@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import {
   getItems,
   getItem,
-  createItem,
+  postItem,
   updatedItem,
   deleteItem,
 } from "./services/items";
 import ItemsGallery from "./screens/ItemsGallery/ItemsGallery";
 import ItemDetail from "./screens/ItemDetail/ItemDetail.jsx";
+import ItemCreate from "./screens/ItemCreate/ItemCreate.jsx";
+import UserProfile from "./screens/UserProfile/UserProfile.jsx";
 function App() {
   const [allItems, setAllItems] = useState([]);
   const history = useHistory();
@@ -28,8 +30,14 @@ function App() {
       <Route exact path="/items">
         <ItemsGallery allItems={allItems} />
       </Route>
+      <Route exact path="/items/new">
+        <ItemCreate />
+      </Route>
       <Route path="/items/:id">
         <ItemDetail />
+      </Route>
+      <Route exact path="/users/:id">
+        <UserProfile />
       </Route>
     </div>
   );
