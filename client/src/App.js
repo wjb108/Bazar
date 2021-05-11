@@ -1,43 +1,62 @@
 import { Route, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
-import {
-  getItems,
-  getItem,
-  postItem,
-  updatedItem,
-  deleteItem,
-} from "./services/items";
+import { getItems } from "./services/items";
+import { verifyUser } from "./services/users";
 import ItemsGallery from "./screens/ItemsGallery/ItemsGallery";
 import ItemDetail from "./screens/ItemDetail/ItemDetail.jsx";
 import ItemCreate from "./screens/ItemCreate/ItemCreate.jsx";
 import UserProfile from "./screens/UserProfile/UserProfile.jsx";
+import UserSignUp from "./screens/UserSignUp/UserSignUp.jsx";
+import UserSignIn from "./screens/UserSignIn/UserSignIn.jsx";
+import Navbar from "./components/Navbar.jsx";
+
 function App() {
   const [allItems, setAllItems] = useState([]);
+  const [currentUser, setCurrentUser] = useState(null);
+  const [toggle, setToggle] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
     fetchItems();
-  }, []);
+    requestUserVerification();
+  }, [toggle]);
 
   const fetchItems = async () => {
     const items = await getItems();
-    console.log(items);
     setAllItems(items);
+  };
+
+  const requestUserVerification = async () => {
+    const user = await verifyUser();
+    setCurrentUser(user);
+  };
+
+  const logout = async () => {
+    await localStorage.clear();
+    setToggle((prevState) => !prevState);
+    history.push("/items");
   };
 
   return (
     <div className="App">
+      <Navbar logout={logout} />
       <Route exact path="/items">
         <ItemsGallery allItems={allItems} />
       </Route>
-      <Route exact path="/items/new">
-        <ItemCreate />
-      </Route>
-      <Route path="/items/:id">
+      <Route exact path="/items/:id">
         <ItemDetail />
+      </Route>
+      <Route exact path="/new/item">
+        <ItemCreate />
       </Route>
       <Route exact path="/users/:id">
         <UserProfile />
+      </Route>
+      <Route exact path="/users/sign_up">
+        <UserSignUp setToggle={setToggle} setCurrentUser={setCurrentUser} />
+      </Route>
+      <Route exact path="/users/sign_in">
+        <UserSignIn setToggle={setToggle} setCurrentUser={setCurrentUser} />
       </Route>
     </div>
   );

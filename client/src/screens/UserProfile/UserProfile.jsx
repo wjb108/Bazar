@@ -17,7 +17,7 @@ export default function UserProfile() {
   };
   return (
     <div>
-      <Link to="/items/new">
+      <Link to="/new/item">
         <button>Create New Item</button>
       </Link>
     </div>

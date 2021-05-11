@@ -44,3 +44,32 @@ export const deleteUser = async (id) => {
     throw error;
   }
 };
+
+export const signUpUser = async (credentials) => {
+  try {
+    const resp = await api.post("/users/sign_up", credentials);
+    localStorage.setItem("token", resp.data.token);
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const signInUser = async (credentials) => {
+  try {
+    const resp = await api.post("/users/sign_in", credentials);
+    localStorage.setItem("token", resp.data.token);
+    return resp.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const verifyUser = async () => {
+  const token = await localStorage.getItem("token");
+  if (token) {
+    const res = await api.get("/api/v1/auth");
+    return res.data;
+  } else {
+    return false;
+  }
+};
