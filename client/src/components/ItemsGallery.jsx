@@ -6,8 +6,8 @@ import {
   createItem,
   updatedItem,
   deleteItem,
-} from "../../services/items";
-import Items from "../../screens/Items/Items";
+} from "../services/items";
+import Items from "../screens/Items/Items";
 
 export default function ItemsContainer() {
   const [allItems, setAllItems] = useState([]);

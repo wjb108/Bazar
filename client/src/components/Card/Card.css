@@ -1,0 +1,13 @@
+.bazar-card {
+  background-color: royalblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bazar-card-img {
+  background-color: purple;
+  width: 25%;
+  height: auto;
+}

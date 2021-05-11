@@ -1,11 +1,13 @@
 import { Route, Switch } from "react-router";
-import ItemsContainer from "./container/ItemsContainer/ItemsContainer";
+import ItemsGallery from "./components/ItemsGallery";
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/items" component={ItemsContainer}></Route>
+        <Route exact path="/items">
+          <ItemsGallery />
+        </Route>
       </Switch>
     </div>
   );
