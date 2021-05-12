@@ -1,7 +1,7 @@
 import "./ItemEdit.css";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { postItem, getItem, updatedItem } from "../../services/items";
+import { getItem, updatedItem } from "../../services/items";
 
 export default function ItemEdit(props) {
   const { id } = useParams();
@@ -42,12 +42,6 @@ export default function ItemEdit(props) {
     const newItem = await updatedItem(id, formData);
     console.log(newItem);
     setFormData(newItem);
-    // await signUpUser(userInput);
-    // let res = await signInUser({
-    //   username: userInput.username,
-    //   password: userInput.password,
-    // });
-    // props.setCurrentUser(res.payload);
     props.setToggle((prevState) => !prevState);
     history.push("/profile");
   };

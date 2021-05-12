@@ -1,6 +1,6 @@
 import "./ItemCreate.css";
-import { useParams, useHistory } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import { useState } from "react";
 import { postItem } from "../../services/items";
 
 export default function ItemCreate(props) {
@@ -17,16 +17,6 @@ export default function ItemCreate(props) {
   const { title, short_description, long_description, img_url, price } =
     formData;
 
-  // useEffect(() => {
-  //   createItem();
-  // }, []);
-
-  // const createItem = async () => {
-  //   const newItem = await postItem(formData);
-  //   console.log(newItem);
-  //   setFormData(newItem);
-  // };
-
   const handleChange = (event) => {
     let { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -40,12 +30,6 @@ export default function ItemCreate(props) {
     const newItem = await postItem(formData);
     console.log(newItem);
     setFormData(newItem);
-    // await signUpUser(userInput);
-    // let res = await signInUser({
-    //   username: userInput.username,
-    //   password: userInput.password,
-    // });
-    // props.setCurrentUser(res.payload);
     props.setToggle((prevState) => !prevState);
     history.push("/profile");
   };
