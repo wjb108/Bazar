@@ -1,14 +1,38 @@
 .navbar-container {
+  /* background-color: teal; */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .home-button {
-  /* display: flex;
-  flex-direction: row; */
+  /* background-color: orange; */
+  display: flex;
+  justify-content: left;
 }
 
 .other-buttons {
-  /* display: flex;
-  flex-direction: row; */
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10%;
+}
+.profile-button {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+.profile-button button {
+  /* background-color: blue; */
+  border: solid 1px;
+  height: 50%;
+  background-color: white;
+  color: black;
+}
+a:link {
+  text-decoration: none;
 }

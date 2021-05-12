@@ -12,13 +12,6 @@ export default function UserSignIn(props) {
 
   const history = useHistory();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    let res = await signInUser(userInput);
-    props.setCurrentUser(res.payload);
-    history.push("/items");
-  };
-
   function handleChange(event) {
     let { id, value } = event.target;
     setUserInput((prevInput) => ({
@@ -26,6 +19,14 @@ export default function UserSignIn(props) {
       [id]: value,
     }));
   }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    let res = await signInUser(userInput);
+    props.setCurrentUser(res.payload);
+    props.setToggle((prevState) => !prevState);
+    history.push("/profile");
+  };
 
   return (
     <div className="users-sign-in-container">

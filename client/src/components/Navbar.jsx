@@ -11,10 +11,12 @@ export default function Navbar(props) {
       </div>
       {props.currentUser ? (
         <>
-          <Link to="/profile">
-            <h3>Profile</h3>
-          </Link>
-          <button onClick={props.logout}>Sign Out</button>
+          <div className="profile-button">
+            <Link to="/profile">
+              <h3>Profile</h3>
+            </Link>
+            <button onClick={props.logout}>Sign Out</button>
+          </div>
         </>
       ) : (
         <>
