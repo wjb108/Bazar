@@ -131,31 +131,31 @@
 # puts "#{Item.count} items created!"
 
 
-category_list = Category.create!([
-  {
-  name: "antiques",
-  },
-  {
-  name: "appliances",
-  },
-  {
-  name: "free",
-  },
-  {
-  name: "general",
-  },
-  {
-  name: "jewelry",
-  },
-  {
-  name: "household",
-  },
-  {
-  name: "sporting",
-  },
-  {
-  name: "tools",
-  },
-])
+# category_list = Category.create!([
+#   {
+#   name: "antiques",
+#   },
+#   {
+#   name: "appliances",
+#   },
+#   {
+#   name: "free",
+#   },
+#   {
+#   name: "general",
+#   },
+#   {
+#   name: "jewelry",
+#   },
+#   {
+#   name: "household",
+#   },
+#   {
+#   name: "sporting",
+#   },
+#   {
+#   name: "tools",
+#   },
+# ])
 
-puts "#{Category.count} categories created!"
+# puts "#{Category.count} categories created!"

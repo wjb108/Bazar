@@ -1,5 +1,5 @@
 class ItemsController < ApiController
-  skip_before_action :authenticate_user!, only: %i[index]
+  skip_before_action :authenticate_user!, only: %i[index show]
   # before_action only: %i[show update destroy]
   
   def index

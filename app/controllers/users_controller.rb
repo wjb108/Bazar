@@ -1,5 +1,5 @@
 class UsersController < ApiController
-  skip_before_action :authenticate_user!, only: %i[index all_users]
+  skip_before_action :authenticate_user!, only: %i[index all_users ]
   # before_action only: %i[show update destroy]
 
   def all_users
@@ -13,8 +13,10 @@ class UsersController < ApiController
   end
 
   def show
-    render json: current_user
+    @user = User.find(params[:id])
+    render json: @user, include: [:items]
   end
+
 
   def update
 
