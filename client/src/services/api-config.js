@@ -8,7 +8,7 @@ const getToken = async () => {
 let apiUrl;
 
 const apiUrls = {
-  production: "",
+  production: "https://obscure-reaches-18391.herokuapp.com/",
   development: "http://localhost:3000",
 };
 
