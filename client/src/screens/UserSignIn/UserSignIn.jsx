@@ -33,7 +33,7 @@ export default function UserSignIn(props) {
       <form className="user-signin-form" onSubmit={handleSubmit}>
         <h2>User Sign-In</h2>
         <label htmlFor="email" placeholder="email">
-          email
+          Email
         </label>
         <input
           type="text"

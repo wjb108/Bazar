@@ -25,7 +25,7 @@ export default function UserSignUp(props) {
 
   const handleUserSubmit = async (e) => {
     e.preventDefault();
-    let data = await signUpUser(userInput);
+    await signUpUser(userInput);
     let res = await signInUser({
       email: userInput.email,
       password: userInput.password,
@@ -39,6 +39,22 @@ export default function UserSignUp(props) {
     <div className="users-sign-up-container">
       <form onSubmit={handleUserSubmit} className="user-signup-form">
         <h2> User Sign-Up </h2>
+        <label>First Name</label>
+        <input
+          name="first_name"
+          type="text"
+          value={userInput.first_name}
+          placeholder="Enter first name .."
+          onChange={handleChange}
+        />
+        <label>Last Name</label>
+        <input
+          name="last_name"
+          type="text"
+          value={userInput.last_name}
+          placeholder="Enter last name .."
+          onChange={handleChange}
+        />
         <label>Email</label>
         <input
           name="email"
@@ -61,22 +77,6 @@ export default function UserSignUp(props) {
           type="password"
           value={userInput.password_confirmation}
           placeholder="Enter password again .."
-          onChange={handleChange}
-        />
-        <label>first_name</label>
-        <input
-          name="first_name"
-          type="first_name"
-          value={userInput.first_name}
-          placeholder="Enter first_name .."
-          onChange={handleChange}
-        />
-        <label>last_name</label>
-        <input
-          name="last_name"
-          type="last_name"
-          value={userInput.last_name}
-          placeholder="Enter last_name .."
           onChange={handleChange}
         />
         <input type="submit"></input>

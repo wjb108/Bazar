@@ -1,0 +1,21 @@
+.profile-container {
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+.profile-header-text {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.profile-header-button button {
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+  height: 50%;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}

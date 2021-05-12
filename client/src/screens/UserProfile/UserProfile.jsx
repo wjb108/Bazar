@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getUser } from "../../services/users";
 import { deleteItem } from "../../services/items";
+import "./UserProfile.css";
 
 export default function UserProfile(props) {
   const { currentUser, setToggle } = props;
@@ -27,8 +28,17 @@ export default function UserProfile(props) {
   }
 
   return (
-    <div>
-      <h1>My Bazar Items</h1>
+    <div className="profile-container">
+      <div className="profile-header">
+        <div className="profile-header-text">
+          <h1>My Bazar Items</h1>
+        </div>
+        <div className="profile-header-button">
+          <Link to="/new/item">
+            <button>Create New Item</button>
+          </Link>
+        </div>
+      </div>
 
       {userProfile.items &&
         userProfile.items.map((item) => {
@@ -55,9 +65,6 @@ export default function UserProfile(props) {
             </div>
           );
         })}
-      <Link to="/new/item">
-        <button>Create New Item</button>
-      </Link>
     </div>
   );
 }
