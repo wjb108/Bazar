@@ -10,8 +10,9 @@ export default function ItemCreate(props) {
     long_description: "",
     img_url: "",
     price: 0,
+    categories: "",
   });
-
+  console.log(props.allCategories);
   const history = useHistory();
 
   const { title, short_description, long_description, img_url, price } =
@@ -37,7 +38,7 @@ export default function ItemCreate(props) {
   return (
     <div className="create-item-container">
       <form onSubmit={handleSubmit} className="user-create-item-form">
-        <label>Title</label>
+        <label htmlFor="title">Title</label>
         <input
           type="text"
           name="title"
@@ -45,7 +46,7 @@ export default function ItemCreate(props) {
           placeholder="Enter title..."
           onChange={handleChange}
         />
-        <label>Image Address</label>
+        <label htmlFor="img_url">Image Address</label>
         <input
           type="text"
           name="img_url"
@@ -53,7 +54,7 @@ export default function ItemCreate(props) {
           placeholder="Enter https://..."
           onChange={handleChange}
         />
-        <label>Short Description</label>
+        <label htmlFor="short_description">Short Description</label>
         <input
           type="text"
           name="short_description"
@@ -61,7 +62,7 @@ export default function ItemCreate(props) {
           placeholder="Enter description..."
           onChange={handleChange}
         />
-        <label>Long Description</label>
+        <label htmlFor="long_description">Long Description</label>
         <input
           type="text"
           name="long_description"
@@ -69,7 +70,7 @@ export default function ItemCreate(props) {
           placeholder="Enter description..."
           onChange={handleChange}
         />
-        <label>Price</label>
+        <label htmlFor="price">Price</label>
         <input
           type="text"
           name="price"
@@ -77,6 +78,18 @@ export default function ItemCreate(props) {
           placeholder="Enter price..."
           onChange={handleChange}
         />
+        <label htmlFor="categories">Category</label>
+        <select
+          value={formData.categories}
+          name="categories"
+          onChange={handleChange}
+        >
+          {props.allCategories.map((category) => (
+            <option key={category.name} name="categories" value={category.name}>
+              {category.name}
+            </option>
+          ))}
+        </select>
         <input type="submit"></input>
       </form>
     </div>

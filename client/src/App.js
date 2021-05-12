@@ -1,6 +1,7 @@
 import { Route, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getItems } from "./services/items";
+import { getCategories } from "./services/categories";
 import { verifyUser } from "./services/users";
 import ItemsGallery from "./screens/ItemsGallery/ItemsGallery";
 import ItemDetail from "./screens/ItemDetail/ItemDetail.jsx";
@@ -13,18 +14,24 @@ import Navbar from "./components/Navbar.jsx";
 
 function App() {
   const [allItems, setAllItems] = useState([]);
+  const [allCategories, setAllCategories] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
   const [toggle, setToggle] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
     fetchItems();
+    fetchCategories();
     requestUserVerification();
   }, [toggle]);
 
   const fetchItems = async () => {
     const items = await getItems();
     setAllItems(items);
+  };
+  const fetchCategories = async () => {
+    const categories = await getCategories();
+    setAllCategories(categories);
   };
 
   const requestUserVerification = async () => {
@@ -48,7 +55,7 @@ function App() {
         <ItemDetail />
       </Route>
       <Route exact path="/new/item">
-        <ItemCreate setToggle={setToggle} />
+        <ItemCreate setToggle={setToggle} allCategories={allCategories} />
       </Route>
       <Route exact path="/edit/item/:id">
         <ItemEdit setToggle={setToggle} />
