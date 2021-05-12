@@ -7,6 +7,9 @@ export default function UserSignUp(props) {
   const defaultInput = {
     email: "",
     password: "",
+    password_confirmation: "",
+    first_name: "",
+    last_name: "",
   };
 
   let history = useHistory();
@@ -34,7 +37,7 @@ export default function UserSignUp(props) {
 
   return (
     <div id="userSignUp">
-      <h2 id="user-sign-up-title"> User Sign Up </h2>
+      <h2 id="user-sign-up-title"> User Sign-Up </h2>
       <form onSubmit={handleUserSubmit} id="userSignUpForm">
         <label>Email</label>
         <input
@@ -44,13 +47,38 @@ export default function UserSignUp(props) {
           placeholder="Enter email .."
           onChange={handleChange}
         />
-
         <label>Password</label>
         <input
           name="password"
           type="password"
           value={userInput.password}
           placeholder="Enter password .."
+          onChange={handleChange}
+        />
+        <input type="submit"></input>
+        <label>Password Confirmation</label>
+        <input
+          name="Password_confirmation"
+          type="Password_confirmation"
+          value={userInput.Password_confirmation}
+          placeholder="Enter Password again .."
+          onChange={handleChange}
+        />
+        <input type="submit"></input>
+        <label>first_name</label>
+        <input
+          name="first_name"
+          type="first_name"
+          value={userInput.first_name}
+          placeholder="Enter first_name .."
+          onChange={handleChange}
+        />
+        <label>last_name</label>
+        <input
+          name="last_name"
+          type="last_name"
+          value={userInput.last_name}
+          placeholder="Enter last_name .."
           onChange={handleChange}
         />
         <input type="submit"></input>

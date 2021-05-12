@@ -30,13 +30,14 @@ export default function UserSignIn(props) {
   return (
     <div className="users-sign-in">
       <form className="user-signin-form" onSubmit={handleSubmit}>
-        <h1>User Sign-In</h1>
+        <h2>User Sign-In</h2>
         <label htmlFor="email" placeholder="email">
           email
         </label>
         <input
           type="text"
           id="email"
+          placeholder="Enter email .."
           onChange={handleChange}
           value={userInput.email}
         ></input>
@@ -46,6 +47,7 @@ export default function UserSignIn(props) {
         <input
           type="password"
           id="password"
+          placeholder="Enter password .."
           onChange={handleChange}
           value={userInput.password}
         ></input>
