@@ -35,9 +35,9 @@ export default function ItemCreate(props) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>title</label>
+    <div className="create-item-container">
+      <form onSubmit={handleSubmit} className="user-create-item-form">
+        <label>Title</label>
         <input
           type="text"
           name="title"
@@ -45,31 +45,31 @@ export default function ItemCreate(props) {
           placeholder="Enter title..."
           onChange={handleChange}
         />
-        <label>img_url</label>
+        <label>Image Address</label>
         <input
           type="text"
           name="img_url"
           value={img_url}
-          placeholder="Enter img_url..."
+          placeholder="Enter https://..."
           onChange={handleChange}
         />
-        <label>short_description</label>
+        <label>Short Description</label>
         <input
           type="text"
           name="short_description"
           value={short_description}
-          placeholder="Enter short_description..."
+          placeholder="Enter description..."
           onChange={handleChange}
         />
-        <label>long_description</label>
+        <label>Long Description</label>
         <input
           type="text"
           name="long_description"
           value={long_description}
-          placeholder="Enter long_description..."
+          placeholder="Enter description..."
           onChange={handleChange}
         />
-        <label>price</label>
+        <label>Price</label>
         <input
           type="text"
           name="price"
