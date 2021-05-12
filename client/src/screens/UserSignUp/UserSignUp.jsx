@@ -55,7 +55,6 @@ export default function UserSignUp(props) {
           placeholder="Enter password .."
           onChange={handleChange}
         />
-        <input type="submit"></input>
         <label>Password Confirmation</label>
         <input
           name="password_confirmation"
@@ -64,7 +63,6 @@ export default function UserSignUp(props) {
           placeholder="Enter password again .."
           onChange={handleChange}
         />
-        <input type="submit"></input>
         <label>first_name</label>
         <input
           name="first_name"

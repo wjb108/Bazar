@@ -3,7 +3,7 @@ import "./ItemsGallery.css";
 
 export default function ItemsContainer(props) {
   const { allItems } = props;
-
+  console.log(allItems);
   return (
     <>
       <h1>Bazar Items</h1>

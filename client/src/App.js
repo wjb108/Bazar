@@ -49,7 +49,7 @@ function App() {
       <Route exact path="/new/item">
         <ItemCreate />
       </Route>
-      <Route exact path="/users/:id">
+      <Route exact path="/profile">
         <UserProfile />
       </Route>
       <Route exact path="/users/sign_up">

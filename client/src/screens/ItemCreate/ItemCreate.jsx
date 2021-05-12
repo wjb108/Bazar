@@ -47,7 +47,7 @@ export default function ItemCreate() {
     // });
     // props.setCurrentUser(res.payload);
     // props.setToggle((prevState) => !prevState);
-    history.push("/items");
+    history.push("/profile");
   };
 
   return (
