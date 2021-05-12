@@ -1,6 +1,36 @@
 .bazar-container {
-  /* background-color: red; */
+  background-color: blue;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.bazar-card {
+  background-color: red;
+  width: 33%;
+  height: 60vh;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20%; */
+  /* margin: 5%; */
+}
+.bazar-card-image {
+  height: 60%;
+  width: 25vw;
+  background-color: yellow;
+}
+
+.bazar-card-info {
+  background-color: white;
+  width: 25vw;
+  height: 18vh;
+}
+
+.bazar-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

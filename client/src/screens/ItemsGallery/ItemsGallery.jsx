@@ -5,18 +5,25 @@ export default function ItemsContainer(props) {
   const { allItems } = props;
 
   return (
-    <div>
+    <>
       <h1>Bazar Items</h1>
-      {allItems.map((item) => (
-        <div className="bazar-container" key={item.id}>
-          <img src={item.img_url} alt={item.title} />
-          <h4>{`Title: ${item.title}`}</h4>
-          <p>{`Info: ${item.short_description}`}</p>
-          <Link to={`/items/${item.id}`}>
-            <button>More Info</button>
-          </Link>
-        </div>
-      ))}
-    </div>
+
+      <div className="bazar-container">
+        {allItems.map((item) => (
+          <div className="bazar-card" key={item.id}>
+            <div className="bazar-card-image">
+              <img className="bazar-img" src={item.img_url} alt={item.title} />
+            </div>
+            <div className="bazar-card-info">
+              <h4>{`Title: ${item.title}`}</h4>
+              <p>{`Info: ${item.short_description}`}</p>
+              <Link to={`/items/${item.id}`}>
+                <button>More Info</button>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
