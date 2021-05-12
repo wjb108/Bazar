@@ -1,0 +1,25 @@
+.product-container {
+  background-color: red;
+  width: 33%;
+  height: 80vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card-image {
+  height: 60%;
+  width: 25vw;
+  background-color: yellow;
+}
+
+.product-card-info {
+  width: 25vw;
+  height: 18vh;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

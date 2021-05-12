@@ -28,7 +28,7 @@ export default function UserSignIn(props) {
   }
 
   return (
-    <div className="users-sign-in">
+    <div className="users-sign-in-container">
       <form className="user-signin-form" onSubmit={handleSubmit}>
         <h2>User Sign-In</h2>
         <label htmlFor="email" placeholder="email">

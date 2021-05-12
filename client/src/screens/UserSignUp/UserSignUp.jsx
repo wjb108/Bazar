@@ -36,9 +36,9 @@ export default function UserSignUp(props) {
   };
 
   return (
-    <div id="userSignUp">
-      <h2 id="user-sign-up-title"> User Sign-Up </h2>
-      <form onSubmit={handleUserSubmit} id="userSignUpForm">
+    <div className="users-sign-up-container">
+      <form onSubmit={handleUserSubmit} className="user-signup-form">
+        <h2> User Sign-Up </h2>
         <label>Email</label>
         <input
           name="email"
