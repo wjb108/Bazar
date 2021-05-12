@@ -47,7 +47,7 @@ export const deleteUser = async (id) => {
 
 export const signUpUser = async (credentials) => {
   try {
-    const resp = await api.post("/api/v1/auth", credentials);
+    const resp = await api.post("/users", credentials);
     localStorage.setItem("token", resp.data.token);
     return resp.data;
   } catch (error) {

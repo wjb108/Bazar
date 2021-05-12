@@ -25,9 +25,9 @@ export default function UserSignUp(props) {
 
   const handleUserSubmit = async (e) => {
     e.preventDefault();
-    await signUpUser(userInput);
+    let data = await signUpUser(userInput);
     let res = await signInUser({
-      username: userInput.username,
+      email: userInput.email,
       password: userInput.password,
     });
     props.setCurrentUser(res.payload);
@@ -58,10 +58,10 @@ export default function UserSignUp(props) {
         <input type="submit"></input>
         <label>Password Confirmation</label>
         <input
-          name="Password_confirmation"
-          type="Password_confirmation"
-          value={userInput.Password_confirmation}
-          placeholder="Enter Password again .."
+          name="password_confirmation"
+          type="password"
+          value={userInput.password_confirmation}
+          placeholder="Enter password again .."
           onChange={handleChange}
         />
         <input type="submit"></input>
