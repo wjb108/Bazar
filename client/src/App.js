@@ -4,6 +4,7 @@ import { getItems } from "./services/items";
 import { verifyUser } from "./services/users";
 import ItemsGallery from "./screens/ItemsGallery/ItemsGallery";
 import ItemDetail from "./screens/ItemDetail/ItemDetail.jsx";
+import ItemEdit from "./screens/ItemEdit/ItemEdit.jsx";
 import ItemCreate from "./screens/ItemCreate/ItemCreate.jsx";
 import UserProfile from "./screens/UserProfile/UserProfile.jsx";
 import UserSignUp from "./screens/UserSignUp/UserSignUp.jsx";
@@ -39,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar logout={logout} />
+      <Navbar currentUser={currentUser} logout={logout} />
       <Route exact path="/items">
         <ItemsGallery allItems={allItems} />
       </Route>
@@ -49,8 +50,11 @@ function App() {
       <Route exact path="/new/item">
         <ItemCreate setToggle={setToggle} />
       </Route>
+      <Route exact path="/edit/item/:id">
+        <ItemEdit setToggle={setToggle} />
+      </Route>
       <Route exact path="/profile">
-        <UserProfile currentUser={currentUser} />
+        <UserProfile setToggle={setToggle} currentUser={currentUser} />
       </Route>
       <Route exact path="/users/sign_up">
         <UserSignUp setToggle={setToggle} setCurrentUser={setCurrentUser} />

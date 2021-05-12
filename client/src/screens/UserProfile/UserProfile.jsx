@@ -1,17 +1,19 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getUser } from "../../services/users";
+import { deleteItem } from "../../services/items";
 
 export default function UserProfile(props) {
-  const { currentUser } = props;
+  const { currentUser, setToggle } = props;
   const [userProfile, setUserProfile] = useState({});
+  const [updateProfile, setUpdateProfile] = useState(false);
   // const { id } = useParams();
 
   useEffect(() => {
     if (currentUser) {
       fetchUser();
     }
-  }, [currentUser]);
+  }, [currentUser, updateProfile]);
 
   const fetchUser = async () => {
     const user = await getUser(currentUser.id);
@@ -19,6 +21,12 @@ export default function UserProfile(props) {
     setUserProfile(user);
     // console.log(userProfile);
   };
+
+  async function handleDelete(id) {
+    await deleteItem(id);
+    setUpdateProfile((prevState) => !prevState);
+    setToggle((prevState) => !prevState);
+  }
 
   return (
     <div>
@@ -41,6 +49,10 @@ export default function UserProfile(props) {
                 <Link to={`/items/${item.id}`}>
                   <button>More Info</button>
                 </Link>
+                <Link to={`/edit/item/${item.id}`}>
+                  <button>Edit</button>
+                </Link>
+                <button onClick={() => handleDelete(item.id)}>Delete</button>
               </div>
             </div>
           );
