@@ -47,10 +47,10 @@ function App() {
         <ItemDetail />
       </Route>
       <Route exact path="/new/item">
-        <ItemCreate />
+        <ItemCreate setToggle={setToggle} />
       </Route>
       <Route exact path="/profile">
-        <UserProfile />
+        <UserProfile currentUser={currentUser} />
       </Route>
       <Route exact path="/users/sign_up">
         <UserSignUp setToggle={setToggle} setCurrentUser={setCurrentUser} />

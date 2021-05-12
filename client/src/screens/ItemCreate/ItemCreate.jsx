@@ -3,7 +3,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { postItem } from "../../services/items";
 
-export default function ItemCreate() {
+export default function ItemCreate(props) {
   const [formData, setFormData] = useState({
     title: "",
     short_description: "",
@@ -46,7 +46,7 @@ export default function ItemCreate() {
     //   password: userInput.password,
     // });
     // props.setCurrentUser(res.payload);
-    // props.setToggle((prevState) => !prevState);
+    props.setToggle((prevState) => !prevState);
     history.push("/profile");
   };
 

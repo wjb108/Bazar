@@ -1,0 +1,14 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-button {
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.other-buttons {
+  /* display: flex;
+  flex-direction: row; */
+}
