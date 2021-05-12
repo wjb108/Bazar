@@ -47,8 +47,9 @@ export const deleteUser = async (id) => {
 
 export const signUpUser = async (credentials) => {
   try {
-    const resp = await api.post("/users/sign_up", credentials);
+    const resp = await api.post("/api/v1/auth", credentials);
     localStorage.setItem("token", resp.data.token);
+    return resp.data;
   } catch (error) {
     throw error;
   }
@@ -56,7 +57,7 @@ export const signUpUser = async (credentials) => {
 
 export const signInUser = async (credentials) => {
   try {
-    const resp = await api.post("/users/sign_in", credentials);
+    const resp = await api.post("/api/v1/auth", credentials);
     localStorage.setItem("token", resp.data.token);
     return resp.data;
   } catch (error) {
