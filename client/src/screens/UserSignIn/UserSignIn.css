@@ -1,11 +1,14 @@
-.users-sign-in-container {
-  background-color: teal;
+* {
+  font-family: "Raleway", sans-serif;
 }
 
 .user-signin-form {
-  background-color: tomato;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.user-signin-form input {
+  padding-left: 50px;
+  padding-right: 50px;
 }

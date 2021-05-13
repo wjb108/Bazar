@@ -1,0 +1,29 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.edit-item-container {
+  /* background-color: blueviolet; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.user-edit-item-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.user-edit-item-form-short {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#user-edit-item-form-long {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.user-edit-item-form input {
+  padding-left: 50px;
+  padding-right: 50px;
+}

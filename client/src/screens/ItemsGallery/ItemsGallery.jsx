@@ -6,7 +6,7 @@ export default function ItemsContainer(props) {
   console.log(allItems);
   return (
     <>
-      <h2>Bazar Items</h2>
+      <h2>Bazar Items For Sale</h2>
 
       <div className="bazar-container">
         {allItems.map((item) => (

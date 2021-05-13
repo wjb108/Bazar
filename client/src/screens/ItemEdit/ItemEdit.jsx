@@ -47,9 +47,9 @@ export default function ItemEdit(props) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>title</label>
+    <div className="edit-item-container">
+      <form className="user-edit-item-form" onSubmit={handleSubmit}>
+        <label>Title</label>
         <input
           type="text"
           name="title"
@@ -57,7 +57,8 @@ export default function ItemEdit(props) {
           placeholder="Enter title..."
           onChange={handleChange}
         />
-        <label>img_url</label>
+        <br></br>
+        <label>Image Address</label>
         <input
           type="text"
           name="img_url"
@@ -65,23 +66,28 @@ export default function ItemEdit(props) {
           placeholder="Enter img_url..."
           onChange={handleChange}
         />
-        <label>short_description</label>
+        <br></br>
+        <label>Short Description</label>
         <input
+          className="user-edit-item-form-short"
           type="text"
           name="short_description"
           value={short_description}
           placeholder="Enter short_description..."
           onChange={handleChange}
         />
-        <label>long_description</label>
+        <br></br>
+        <label>Long Description</label>
         <input
+          id="user-edit-item-form-long"
           type="text"
           name="long_description"
           value={long_description}
           placeholder="Enter long_description..."
           onChange={handleChange}
         />
-        <label>price</label>
+        <br></br>
+        <label>Price</label>
         <input
           type="text"
           name="price"
@@ -89,6 +95,7 @@ export default function ItemEdit(props) {
           placeholder="Enter price..."
           onChange={handleChange}
         />
+        <br></br>
         <input type="submit"></input>
       </form>
     </div>

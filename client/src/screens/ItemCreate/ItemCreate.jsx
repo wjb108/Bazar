@@ -46,6 +46,7 @@ export default function ItemCreate(props) {
           placeholder="Enter title..."
           onChange={handleChange}
         />
+        <br></br>
         <label htmlFor="img_url">Image Address</label>
         <input
           type="text"
@@ -54,6 +55,7 @@ export default function ItemCreate(props) {
           placeholder="Enter https://..."
           onChange={handleChange}
         />
+        <br></br>
         <label htmlFor="short_description">Short Description</label>
         <input
           type="text"
@@ -62,6 +64,7 @@ export default function ItemCreate(props) {
           placeholder="Enter description..."
           onChange={handleChange}
         />
+        <br></br>
         <label htmlFor="long_description">Long Description</label>
         <input
           type="text"
@@ -70,6 +73,7 @@ export default function ItemCreate(props) {
           placeholder="Enter description..."
           onChange={handleChange}
         />
+        <br></br>
         <label htmlFor="price">Price</label>
         <input
           type="text"
@@ -78,6 +82,7 @@ export default function ItemCreate(props) {
           placeholder="Enter price..."
           onChange={handleChange}
         />
+        <br></br>
         <label htmlFor="categories">Category</label>
         <select
           value={formData.categories}
@@ -90,6 +95,7 @@ export default function ItemCreate(props) {
             </option>
           ))}
         </select>
+        <br></br>
         <input type="submit"></input>
       </form>
     </div>

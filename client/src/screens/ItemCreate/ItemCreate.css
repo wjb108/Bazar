@@ -1,5 +1,6 @@
 .create-item-container {
-  background-color: blueviolet;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .user-create-item-form {
@@ -8,4 +9,17 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.user-create-item-form input {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.user-create-item-form select {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
 }

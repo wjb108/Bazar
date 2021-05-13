@@ -19,7 +19,6 @@ export default function ItemDetail() {
 
   return (
     <>
-      <h3>Product Info</h3>
       <div className="product-container">
         <div className="product-card-image">
           <img className="product-img" src={item.img_url} alt={item.title} />
@@ -27,7 +26,7 @@ export default function ItemDetail() {
         <div className="product-card-info">
           <h4>{`Title: ${item.title}`}</h4>
           <p>{`Description: ${item.long_description}`}</p>
-          <p>{`Price: ${item.price}`}</p>
+          <p>{`Price: $${item.price}`}</p>
         </div>
       </div>
     </>

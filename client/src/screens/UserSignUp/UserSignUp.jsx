@@ -32,13 +32,13 @@ export default function UserSignUp(props) {
     });
     props.setCurrentUser(res.payload);
     props.setToggle((prevState) => !prevState);
-    history.push("/items");
+    history.push("/profile");
   };
 
   return (
     <div className="users-sign-up-container">
       <form onSubmit={handleUserSubmit} className="user-signup-form">
-        <h2> User Sign-Up </h2>
+        <h2> Create Account </h2>
         <label>First Name</label>
         <input
           name="first_name"
@@ -47,6 +47,7 @@ export default function UserSignUp(props) {
           placeholder="Enter first name .."
           onChange={handleChange}
         />
+        <br></br>
         <label>Last Name</label>
         <input
           name="last_name"
@@ -55,6 +56,7 @@ export default function UserSignUp(props) {
           placeholder="Enter last name .."
           onChange={handleChange}
         />
+        <br></br>
         <label>Email</label>
         <input
           name="email"
@@ -63,6 +65,7 @@ export default function UserSignUp(props) {
           placeholder="Enter email .."
           onChange={handleChange}
         />
+        <br></br>
         <label>Password</label>
         <input
           name="password"
@@ -71,6 +74,7 @@ export default function UserSignUp(props) {
           placeholder="Enter password .."
           onChange={handleChange}
         />
+        <br></br>
         <label>Password Confirmation</label>
         <input
           name="password_confirmation"
@@ -79,7 +83,8 @@ export default function UserSignUp(props) {
           placeholder="Enter password again .."
           onChange={handleChange}
         />
-        <input type="submit"></input>
+        <br></br>
+        <button type="submit">Sign-Up</button>
       </form>
     </div>
   );

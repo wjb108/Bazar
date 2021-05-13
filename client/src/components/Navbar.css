@@ -1,3 +1,7 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 .navbar-container {
   /* background-color: teal; */
   display: flex;
