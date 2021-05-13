@@ -1,9 +1,9 @@
 .users-sign-up-container {
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .user-signup-form {
-  background-color: tomato;
+  /* background-color: tomato; */
   display: flex;
   flex-direction: column;
   align-items: center;
