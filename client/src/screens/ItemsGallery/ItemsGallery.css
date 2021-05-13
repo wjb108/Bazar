@@ -2,20 +2,20 @@
   font-family: "Raleway", sans-serif;
 }
 .bazar-container {
-  /* background-color: blue; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: 100%;
 }
 h2 {
   display: flex;
   justify-content: center;
 }
 .bazar-card {
-  /* background-color: red; */
   border: solid 1px;
-  height: 60vh;
+  height: auto;
   min-width: 320px;
   flex-direction: column;
   display: flex;
@@ -24,15 +24,15 @@ h2 {
   align-items: center;
 }
 .bazar-card-image {
-  height: 70%;
+  height: 50vh;
   width: 25vw;
   min-width: 320px;
 }
 
 .bazar-card-info {
-  background-color: white;
+  background-color: #fff;
   width: 25vw;
-  height: 18vh;
+  height: auto;
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@ h2 {
   background-color: white;
   border: solid 1px;
   padding: 5px;
+  margin-bottom: 25%;
   /* width: 25vw;
   height: 18vh; */
 }

@@ -21,13 +21,15 @@ export default function ItemDetail() {
   return (
     <>
       <div className="product-container">
-        <div className="product-card-image">
-          <img className="product-img" src={item.img_url} alt={item.title} />
-        </div>
-        <div className="product-card-info">
-          <h4>{`Title: ${item.title}`}</h4>
-          <p>{`Description: ${item.long_description}`}</p>
-          <p>{`Price: $${item.price}`}</p>
+        <div className="ProductCard">
+          <div className="product-card-image">
+            <img className="product-img" src={item.img_url} alt={item.title} />
+          </div>
+          <div className="product-card-info">
+            <h4>{`Title: ${item.title}`}</h4>
+            <p>{`Description: ${item.long_description}`}</p>
+            <p>{`Price: $${item.price}`}</p>
+          </div>
         </div>
       </div>
     </>

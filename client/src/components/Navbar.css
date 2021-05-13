@@ -3,36 +3,67 @@
 }
 
 .navbar-container {
-  /* background-color: teal; */
+  /* width: 100%;
+  height: auto;
+  background-color: teal;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  margin: 0;
+  background-color: #fff;
+
+  width: 100vw;
+  min-height: 30px;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftBox {
+  height: 5vh;
+  width: 50vw;
+  min-width: 30vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.RightButtons {
+  width: 50%;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .home-button {
-  /* background-color: orange; */
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: 1vw;
-}
-.home-button img {
-  /* background-color: orange; */
-  display: flex;
-  justify-content: left;
-  height: 6vh;
-  align-items: center;
-}
+  width: 50%;
 
-.other-buttons {
-  /* background-color: blue; */
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 10%;
+  justify-content: left;
+  height: 10vh;
+  align-items: center;
+}
+.home-button-img {
+  height: 80%;
+  width: 6vw;
+}
+.button-img-link {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.other-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
 }
 .profile-button {
-  /* background-color: blue; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -57,4 +88,14 @@ a:link {
 a:visited {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .other-buttons {
+    width: 100%;
+  }
+
+  .home-button-img {
+    width: 100%;
+  }
 }
