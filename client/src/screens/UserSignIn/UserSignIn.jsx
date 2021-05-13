@@ -25,11 +25,12 @@ export default function UserSignIn(props) {
     let res = await signInUser(userInput);
     if (res.errors) {
       return alert("Please sign up for an account");
-    } else if (res.payload) {
+    } else if (res.token) {
       props.setCurrentUser(res.payload);
       props.setToggle((prevState) => !prevState);
       history.push("/profile");
     }
+    console.log(res);
   };
 
   return (

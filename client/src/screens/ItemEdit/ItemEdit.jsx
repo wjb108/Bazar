@@ -21,6 +21,7 @@ export default function ItemEdit(props) {
 
   useEffect(() => {
     retrieveItem();
+    // eslint-disable-next-line
   }, []);
 
   const retrieveItem = async () => {

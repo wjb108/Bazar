@@ -13,6 +13,7 @@ export default function UserProfile(props) {
     if (currentUser) {
       fetchUser();
     }
+    // eslint-disable-next-line
   }, [currentUser, updateProfile]);
 
   const fetchUser = async () => {
@@ -43,8 +44,8 @@ export default function UserProfile(props) {
       {userProfile.items &&
         userProfile.items.map((item) => {
           return (
-            <div className="profile-card-container">
-              <div className="profile-card" key={item.id}>
+            <div className="profile-card-container" key={item.id}>
+              <div className="profile-card">
                 <div className="profile-card-image">
                   <img
                     className="profile-img"

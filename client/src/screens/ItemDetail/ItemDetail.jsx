@@ -9,6 +9,7 @@ export default function ItemDetail() {
 
   useEffect(() => {
     fetchItem();
+    // eslint-disable-next-line
   }, []);
 
   const fetchItem = async () => {
