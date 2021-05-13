@@ -6,7 +6,7 @@ class RegistrationsController < Devise::RegistrationsController
     if @user.save
       render json: @user
     else
-      render json: { errors: @user.errors }
+      render json: { errors: @user.errors.full_message }
     end
   end
 
