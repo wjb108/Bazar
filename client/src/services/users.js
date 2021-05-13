@@ -58,7 +58,9 @@ export const signUpUser = async (credentials) => {
 export const signInUser = async (credentials) => {
   try {
     const resp = await api.post("/api/v1/auth", credentials);
-    localStorage.setItem("token", resp.data.token);
+    if (resp.data.token) {
+      localStorage.setItem("token", resp.data.token);
+    }
     return resp.data;
   } catch (error) {
     throw error;

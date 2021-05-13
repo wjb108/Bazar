@@ -23,9 +23,13 @@ export default function UserSignIn(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     let res = await signInUser(userInput);
-    props.setCurrentUser(res.payload);
-    props.setToggle((prevState) => !prevState);
-    history.push("/profile");
+    if (res.errors) {
+      return alert("Please sign up for an account");
+    } else if (res.payload) {
+      props.setCurrentUser(res.payload);
+      props.setToggle((prevState) => !prevState);
+      history.push("/profile");
+    }
   };
 
   return (
