@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import shop from "../../src/shop.png";
 
 export default function Navbar(props) {
   return (
     <div className="navbar-container">
       <div className="home-button">
         <Link to="/items">
-          <h2>Bazar</h2>
+          {/* <h2>Bazar</h2> */}
+          <img src={shop} alt="home" />
         </Link>
       </div>
       {props.currentUser ? (

@@ -43,24 +43,30 @@ export default function UserProfile(props) {
       {userProfile.items &&
         userProfile.items.map((item) => {
           return (
-            <div className="bazar-card" key={item.id}>
-              <div className="bazar-card-image">
-                <img
-                  className="bazar-img"
-                  src={item.img_url}
-                  alt={item.title}
-                />
-              </div>
-              <div className="bazar-card-info">
-                <h4>{`Title: ${item.title}`}</h4>
-                <p>{`Info: ${item.short_description}`}</p>
-                <Link to={`/items/${item.id}`}>
-                  <button>More Info</button>
-                </Link>
-                <Link to={`/edit/item/${item.id}`}>
-                  <button>Edit</button>
-                </Link>
-                <button onClick={() => handleDelete(item.id)}>Delete</button>
+            <div className="profile-card-container">
+              <div className="profile-card" key={item.id}>
+                <div className="profile-card-image">
+                  <img
+                    className="profile-img"
+                    src={item.img_url}
+                    alt={item.title}
+                  />
+                </div>
+                <div className="profile-card-info">
+                  <h4>{`Title: ${item.title}`}</h4>
+                  <p>{`Info: ${item.short_description}`}</p>
+                  <div className="profile-card-buttons">
+                    <Link to={`/items/${item.id}`}>
+                      <button>More Info</button>
+                    </Link>
+                    <Link to={`/edit/item/${item.id}`}>
+                      <button>Edit</button>
+                    </Link>
+                    <button onClick={() => handleDelete(item.id)}>
+                      Delete
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           );

@@ -1,32 +1,47 @@
 .bazar-container {
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.bazar-card {
-  background-color: red;
-  width: 33%;
-  height: 60vh;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
+h2 {
   display: flex;
   justify-content: center;
+}
+.bazar-card {
+  /* background-color: red; */
+  border: solid 1px;
+  height: 60vh;
+  min-width: 320px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  /* margin-bottom: 20%; */
-  /* margin: 5%; */
 }
 .bazar-card-image {
-  height: 60%;
+  height: 70%;
   width: 25vw;
-  background-color: yellow;
+  min-width: 320px;
 }
 
 .bazar-card-info {
   background-color: white;
   width: 25vw;
   height: 18vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bazar-card-info button {
+  background-color: white;
+  border: solid 1px;
+  padding: 5px;
+  /* width: 25vw;
+  height: 18vh; */
 }
 
 .bazar-img {

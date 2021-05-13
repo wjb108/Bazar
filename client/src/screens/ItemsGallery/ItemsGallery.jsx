@@ -6,7 +6,7 @@ export default function ItemsContainer(props) {
   console.log(allItems);
   return (
     <>
-      <h1>Bazar Items</h1>
+      <h2>Bazar Items</h2>
 
       <div className="bazar-container">
         {allItems.map((item) => (
@@ -15,7 +15,7 @@ export default function ItemsContainer(props) {
               <img className="bazar-img" src={item.img_url} alt={item.title} />
             </div>
             <div className="bazar-card-info">
-              <h4>{`Title: ${item.title}`}</h4>
+              <p>{`Title: ${item.title}`}</p>
               <p>{`Info: ${item.short_description}`}</p>
               <Link to={`/items/${item.id}`}>
                 <button>More Info</button>

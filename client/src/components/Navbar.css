@@ -9,6 +9,15 @@
   /* background-color: orange; */
   display: flex;
   justify-content: left;
+  align-items: center;
+  margin-left: 1vw;
+}
+.home-button img {
+  /* background-color: orange; */
+  display: flex;
+  justify-content: left;
+  height: 6vh;
+  align-items: center;
 }
 
 .other-buttons {
@@ -35,4 +44,13 @@
 }
 a:link {
   text-decoration: none;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
 }

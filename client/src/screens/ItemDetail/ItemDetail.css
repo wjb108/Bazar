@@ -1,5 +1,5 @@
 .product-container {
-  background-color: red;
+  /* background-color: red; */
   width: 33%;
   height: 80vh;
   flex-direction: column;
@@ -10,7 +10,7 @@
 .product-card-image {
   height: 60%;
   width: 25vw;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .product-card-info {
