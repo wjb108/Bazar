@@ -1,6 +1,7 @@
-## Overview
+# Bazar CRUD 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
 
 **Bazar** is place where people can sell miscellaneous and tends to be more informal in nature than a marketplace.
+
 
 <br>
 
