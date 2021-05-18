@@ -1,6 +1,7 @@
 # Bazar CRUD 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
 
-**Project Description** 
+## Project Description
+
 🌮 Taco order system for pickup orders
 
 📁 Render data from AirTable API with menu items with fields: image, title, price, description
