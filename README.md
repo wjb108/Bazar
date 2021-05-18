@@ -2,7 +2,7 @@
 
 ## Project Description
 
-🛍️ Sign-up to start selling items you no longer wanter
+🛍️ Sign-up to start selling items you no longer want
 
 📁 Render items for sale from all registered users on homepage
 
@@ -11,22 +11,17 @@
 
 <br>
 
-#### Wireframes
+## Wireframes
 
-Homepage
 <img src="./Builds - Homepage.png"/>
 Registration
 <img src="./Builds - Registration.png"/>
 User Profile
 <img src="./Builds - User Profile.png"/>
 
-#### Component Architecture
+## Component Architecture
 
 <img src="./Builds - Outline Front-End.png"/>
-
-### Server (Back End)
-
-#### ERD Model
 
 ## <img src="./Builds - Outline Back-End.png"/>
 ## MVP
