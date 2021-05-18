@@ -1,6 +1,11 @@
 # Bazar CRUD 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
 
-**Bazar** is place where people can sell miscellaneous items.
+**Project Description** 
+🌮 Taco order system for pickup orders
+
+📁 Render data from AirTable API with menu items with fields: image, title, price, description
+
+🥡 Select number of tacos to shopping cart, modify order quantity if desired, submit order and receive receipt
 
 
 <br>
