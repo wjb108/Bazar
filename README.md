@@ -1,5 +1,5 @@
 # Bazar CRUD 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
-
+website takes a bit to load
 ## Project Description
 
 🌮 Taco order system for pickup orders
