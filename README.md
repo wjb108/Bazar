@@ -11,6 +11,24 @@
 
 <br>
 
+#### Wireframes
+
+Homepage
+<img src="./Builds - Homepage.png"/>
+Registration
+<img src="./Builds - Registration.png"/>
+User Profile
+<img src="./Builds - User Profile.png"/>
+
+#### Component Architecture
+
+<img src="./Builds - Outline Front-End.png"/>
+
+### Server (Back End)
+
+#### ERD Model
+
+## <img src="./Builds - Outline Back-End.png"/>
 ## MVP
 
 A user can sign up for an account and list multiple items for sale.
@@ -43,24 +61,7 @@ Will fill in later!
 
 ### Client (Front End)
 
-#### Wireframes
 
-Homepage
-<img src="./Builds - Homepage.png"/>
-Registration
-<img src="./Builds - Registration.png"/>
-User Profile
-<img src="./Builds - User Profile.png"/>
-
-#### Component Architecture
-
-<img src="./Builds - Outline Front-End.png"/>
-
-### Server (Back End)
-
-#### ERD Model
-
-## <img src="./Builds - Outline Back-End.png"/>
 
 ## Post-MVP
 
