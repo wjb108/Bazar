@@ -1,12 +1,12 @@
-# Bazar CRUD 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
+# Bazar/ Facebook Marketplace CRUD Clone 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
 
 ## Project Description
 
-🌮 Taco order system for pickup orders
+🛍️ Sign-up to start selling items you no longer wanter
 
-📁 Render data from AirTable API with menu items with fields: image, title, price, description
+📁 Render items for sale from all registered users on homepage
 
-🥡 Select number of tacos to shopping cart, modify order quantity if desired, submit order and receive receipt
+😀 Authenticated users can create, update, and delete items for sale from profile page
 
 
 <br>
