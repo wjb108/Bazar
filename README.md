@@ -36,31 +36,9 @@ The principal screens:
 
 - user profile page where the user can create, update, and delete items for sale.
 
-### Goal
-
-Build full-stack, full-CRUD app with user authentication utilizing a RESTful JSON API with the so-called "React on Rails" stack.
-
-### Libraries and Dependencies
-
-Will fill in later!
-
-|    Library    | Description                              |
-| :-----------: | :--------------------------------------- |
-|     React     | Lorem ipsum dolor sit amet, consectetur. |
-| React Router  | Lorem ipsum dolor sit amet, consectetur. |
-| Ruby on Rails | Lorem ipsum dolor sit amet, consectetur. |
-|       ?       | Lorem ipsum dolor sit amet, consectetur. |
-|       ?       | Lorem ipsum dolor sit amet, consectetur. |
-
-<br>
-
-### Client (Front End)
-
-
-
 ## Post-MVP
 
-- Sorting of items
+- Sorting of items by category
 
 - Save favorites
 
