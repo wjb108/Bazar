@@ -2,6 +2,8 @@
 
 ## Project Description
 
+🥅 Full-stack, full-CRUD app with user authentication utilizing a RESTful JSON API with the so-called "React on Rails" stack.
+
 🛍️ Sign-up to start selling items you no longer want
 
 📁 Render items for sale from all registered users on homepage
