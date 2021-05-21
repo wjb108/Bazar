@@ -1,5 +1,10 @@
 # Bazar/ Facebook Marketplace CRUD Clone 👉 [Link](https://609d8c9bfdf7111c7facd57f--affectionate-edison-cdc4a7.netlify.app/items)
 
+[![Overview Bazar App](https://cdn.loom.com/sessions/thumbnails/b180128312de4b9e8940c9da775dbfca-with-play.gif)](https://www.loom.com/share/b180128312de4b9e8940c9da775dbfca "Overview Bazar App")
+
+
+
+
 ## Project Description
 
 🥅 Full-stack, full-CRUD app with user authentication utilizing a RESTful JSON API with the so-called "React on Rails" stack.
